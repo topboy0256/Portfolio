@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'josefin sans',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #222633;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8%;
+    padding-right:8%;
+    background-color: #272829;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+span{
+    color: #756b58;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize ;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 5px 15px;
+    transition: 0.6s ease;
+
+}
+nav ul li a:hover{
+    background-color: #756b58;
+
+}
+nav ul li.active a{
+    background-color: #756b58;
+    color: white;
+}
+.btn{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #756b58;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    background-color:#222633
+}
+h1{
+    color: #fff;
+    margin: 15px 0px 15px;
+    font-size: 55px;
+}
+h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+h4{
+    color: #756b58;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+.Newsletter{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.Newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #756b58;
+    outline: none;
+    border-radius: 30px;
+}
+.Newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #756b58;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000 0px 0px 15px green;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+.Newsletter form input:last-child:hover{
+    transform: scale(0.9);
+    background: #000;
+    border: 2px solid #756b58;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    position:absolute;
+}
+.line{
+    
+    border: none;
+    border-top: 1px solid gainsboro;
+    margin: 20px 40px 0px 40px;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 100px;
+}
+.items ul li{
+    display: inline-block;
+    padding: 10px;
+    
+    
+}
+.items ul li i{
+    font-size: 20px;
+    color: #FFFFFF;
+}
